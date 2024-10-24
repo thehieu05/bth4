@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #B50D0D;
+            --white-color: #fff;
+            --black-color: #000;
+        }
+
+        html {
+            font: 62.5%;
+        }
+
+        nav {
+            width: 100%;
+            background-color: var(--primary-color);
+
+        }
+
+        .navbar {
+            height: 120px;
+            width: 1000px;
+            max-width: 100%;
+            margin: 0 auto;
+            /* display: flex; */
+            /* justify-content: space-between; */
+            align-items: center;
+        }
+
+        .navbar .logo h1 {
+            text-transform: uppercase;
+            color: var(--white-color);
+            font-size: 1.4rem;
+            float: left;
+            line-height: 120px;
+            ;
+        }
+
+        .navbar-list-link {
+            float: right;
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            padding-top: 40px;
+            border-radius: 4px;
+        }
+
+        .navbar-link {
+            padding: 10px;
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .navbar-link a {
+            text-decoration: none;
+            text-transform: capitalize;
+            color: var(--white-color);
+        }
+
+        .navbar-link:hover:not(.active)>a {
+            color: #A0C517;
+        }
+
+        .active {
+            background-color: #681313;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+
+        #main {
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .post {
+            width: 600px;
+            float: left;
+        }
+
+        .post h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            font-weight: 400;
+            color: #222;
+        }
+
+        .post p {
+            margin: 20px 0;
+            color: #222;
+            line-height: 20px;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            font-size: 0.8rem;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .comment-btn {
+            margin-left: 13px;
+        }
+
+        .sidebar {
+            float: right;
+            /* margin-top: 20px; */
+            background-color: #F0F0F0;
+            border-radius: 6px;
+            width: 340px;
+            padding: 40px;
+        }
+
+        .sidebar .heading {
+            margin-left: 17px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            color: #222;
+            font-weight: 300;
+        }
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    padding: 16px 20px;
+}
+
+.sidebar ul li a {
+    color: var(--primary-color);
+}
+
+#feature-content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 300px;
+    float: left;
+}
+
+.column1 {
+    margin-right: 50px;
+}
+
+.column h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #222;
+}
+
+.column p {
+    margin: 10px 0;
+    color: #222;
+    line-height: 20px;
+}
+
+
+.column3 {
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 140px;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+footer p {
+    line-height: 140px;
+    color: #A0C517;
+}
+</style>
+</head>
+
+<body>
+<section id="header">
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <h1>breakeven</h1>
+        </div>
+        <ul class="navbar-list-link">
+            <li class="navbar-link active"><a href="#">home page</a> </li>
+            <li class="navbar-link"><a href="#">about</a> </li>
+            <li class="navbar-link"><a href="#">about</a> </li>
+            <li class="navbar-link"><a href="#">contact</a> </li>
+            <li class="navbar-link"><a href="#">about</a> </li>
+
+        </ul>
+        <div class="icon"></div>
+    </div>
+</nav>
+</section>
+
+<section id="main">
+<div class="post">
+    <h1>Welcome To Breakeven</h1>
+    <div class="image">
+        <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img05.jpg" alt="">
+    </div>
+    <p>This is Breakeven , a free, fully standards-compliant CSS template designed by TEMPLATED. The photos in
+        this template are from Fotogrph. This free template is released under the Creative Commons Attribution
+        license, so you're pretty much free to do whatever you want with it (even use it commercially) provided
+        you give us credit for it. Have fun :)</p>
+    <button>Read More</button>
+    <button class="comment-btn">Comments</button>
+</div>
+<div class="sidebar">
+    <h1 class="heading">Categories</h1>
+    <ul>
+        <li><a href="">Aliquam libero</a></li>
+        <li><a href="">Consectetuer adipiscing elit</a></li>
+        <li><a href="">Metus aliquam pellentesque</a></li>
+        <li><a href="">Suspendisse iaculis mauris</a></li>
+        <li><a href="">Urnanet non molestie semper</a></li>
+        <li><a href="">Proin gravida orci porttitor</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="clear-fix" style="clear: both; display: table; content: '';"></div>
+
+    <section id="feature-content">
+        <div class="column1 column">
+            <h2>Maecenas luctus</h2>
+            <div class="image">
+                <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img06.jpg" alt="">
+            </div>
+            <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam
+                enim, molestie.</p>
+            <button class="read-more-btn">Read more</button>
+        </div>
+        <div class="column2 column">
+            <h2>Maecenas luctus</h2>
+            <div class="image">
+                <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img06.jpg" alt="">
+            </div>
+            <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam
+                enim, molestie.</p>
+            <button class="read-more-btn">Read more</button>
+        </div>
+        <div class="column3 column">
+            <h2>Maecenas luctus</h2>
+            <div class="image">
+                <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img06.jpg" alt="">
+            </div>
+            <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam
+                enim, molestie.</p>
+            <button class="read-more-btn">Read more</button>
+        </div>
+    </section>
+    <div class="clear-fix" style="clear: both; display: table; content: '';"></div>
+
+    <footer>
+        <p>© Project 1.Lập trình Web-CNTT - 2024</p>
+    </footer>
+</body>
+
+</html>
