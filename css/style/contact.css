@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Định nghĩa chủ đạo */
+:root {
+  --primary-color: #2f2b2b;
+  --primary-color-light: #162e5e;
+  --primary-color-extra-light: #080809;
+  --secondary-color: #1670ed;
+  --secondary-color-dark: #2cd6c5;
+  --text-light: #8ba2c3;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --transition: 0.3s ease; 
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color-extra-light);
+  color: var(--white);
+  line-height: 1.6;
+}
+/* Phần chung */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hình ảnh */
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover; 
+}
+
+.custom-bg{
+  background-color: var(--primary-color-light);
+}
+/* Phần chung end*/
+
+/*Team*/
+.team span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #0077ff;
+  margin: 5px auto;
+}
+.team .team_box .profile {
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.team .team_box .profile:hover {
+  transform: translateY(-10px);
+}
+.team .team_box .profile .info .name {
+  font-size: 22px;
+}
+.team .team_box .profile .info .bio {
+  font-size: 16px;
+}
+.team .team_box .profile .info .team_icon i {
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+.team .team_box .profile .info .team_icon i:hover {
+  color: #fac031; 
+}
+/* contact us  */
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: #0077ff;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.ff-secondary {
+  font-family: 'Pacifico', cursive;
+}
+

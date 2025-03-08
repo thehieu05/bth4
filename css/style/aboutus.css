@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Định nghĩa biến chủ đạo */
+:root {
+  --primary-color: #2f2b2b;
+  --primary-color-light: #162e5e;
+  --primary-color-extra-light: #080809;
+  --secondary-color: #1670ed;
+  --secondary-color-dark: #2cd6c5;
+  --text-light: #8ba2c3;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --transition: 0.3s ease; 
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color-extra-light);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* Phần chung */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Hình ảnh */
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover
+}
+.custom-bg{
+  background-color: var(--primary-color-light);
+}
+/* Phần chung end*/
+
+.img-wrap:hover{
+  transform: scale(1.1);
+  transition:transform 0.3s;
+}
+
+  .review__content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .review__member img {
+    border: 2px solid var(--primary-color-light);
+  }
+  
+  .review__rating span {
+    font-size: 1.25rem;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  .carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+  
+  .carousel-fade .carousel-item.active {
+    opacity: 1;
+  }
+  
+  
